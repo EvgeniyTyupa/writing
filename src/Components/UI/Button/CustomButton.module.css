@@ -1,0 +1,23 @@
+.main {
+    font-size: 18px !important;
+    border-radius: 0px !important;
+    font-family: 'InputMono-Bold' !important;
+    padding: 20px 30px 18px !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    border: 1px solid transparent !important;
+}
+.red {
+    background-color: rgb(148, 0, 20) !important;
+}
+.red:hover {
+    background-color: white !important;
+    color: rgb(148, 0, 20) !important;
+    border: 1px solid rgb(148, 0, 20) !important;
+}
+.green {
+    background-color: rgb(39, 148, 0);
+}
+.green:hover {
+    background-color: rgb(32, 117, 1);
+}

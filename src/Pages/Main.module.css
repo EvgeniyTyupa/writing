@@ -1,0 +1,147 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HOME */
+
+.home {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.home h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.home p {
+    font-size: 35px;
+}
+.home h2 {
+    font-family: 'InputMono-Medium';
+    font-size: 55px;
+    line-height: 55px;
+    color: #940014;
+    margin-left: auto;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.home ul {
+    margin-top: 50px;
+    list-style: none;
+}
+.home ul li::before {
+    content: "¶";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+.home button {
+    width: fit-content;
+    align-self: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* TIME */
+
+.time {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter h3 {
+    color: white;
+    background-color: black;
+    padding: 2.5% 10% 1%;
+    font-family: 'InputMono-Medium';
+    font-size: 42px;
+    height: 55px;
+    width: fit-content;
+}
+.counter span {
+    font-family: 'InputMono-Light';
+    font-size: 20px;
+    margin-top: 8px;
+}
+.dateBot {
+    display: flex;
+    justify-content: space-between;
+}
+.time img {
+    position: absolute;
+    right: 0;
+}
+.dateText {
+    flex-direction: column;
+    display: flex;
+    width: 40%;
+    margin-top: 50px;
+}
+.dateText p {
+    color: #940014;
+    font-size: 16px;
+    font-family: 'InputMono-Regular';
+}
+.dateText p + p {
+    margin-top: 30px
+}
+.dateBot {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.centralCounter { 
+    width: 40%;
+}
+
+/* WHO */
+.who {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.arrow {
+    margin: auto 5%;
+    font-size: 24px;
+}
+.whoSide p + p{
+    margin-top: 15px;
+}
+.whoSide h1 {
+    margin-bottom: 30px;
+}
+
+/* INVITE */
+
+.invite {
+    margin-top: 80px;
+    width: 100%;
+    background-image: url("../Assets/bg1.png");
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inviteText {
+    background-color: white;
+    padding: 3% 5%;
+    text-align: center;
+    width: 580px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
