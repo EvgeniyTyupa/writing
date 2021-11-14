@@ -1,6 +1,6 @@
 import * as axios from "axios";
 
-const baseURL = 'https://v1.nocodeapi.com/nadai/google_sheets/TskAKqNbdGkTLJrY?tabId=leads&api_key=GHCmpNtnTEhcSbDjA';
+const baseURL = "https://v1.nocodeapi.com/nadai/google_sheets/EVLkmqQvpyUyjbYV?tabId=sheet1&api_key=GHCmpNtnTEhcSbDjA"
 
 const tgToken = "1277105148:AAFhnqIm9SKeNy6Ygv-_NlXxTmwhSQwTgJo"
 const chatId = "-1001430648003"
@@ -11,9 +11,10 @@ export const googleApi = {
         let name = formData.name;
         let phone = formData.phone;
         let email = formData.email;
+        let packet = formData.packetType;
         let url = formData.userURL;
 
-        return axios.post(baseURL, JSON.stringify([[name, phone, email, url]]), {
+        return axios.post(baseURL, JSON.stringify([[name, phone, email, packet, url]]), {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -23,7 +24,7 @@ export const googleApi = {
 
 export const tgApi = {
     saveDataToTelegramBot(formData){
-        let message = "<strong>Новая заявка!</strong>\n<strong>Лендинг:</strong> negotiations.profi-space.com / обычный\n<strong>Имя:</strong> " + formData.name +  "\n<strong>Телефон:</strong> " + formData.phone + "\n<strong>Email:</strong> " + formData.email;
+        let message = "<strong>Новая заявка!</strong>\n<strong>Лендинг:</strong> writingwell.profi-space.com / " + formData.packetType + "\n<strong>Имя:</strong> " + formData.name +  "\n<strong>Телефон:</strong> " + formData.phone + "\n<strong>Email:</strong> " + formData.email;
         const data = {
             chat_id: chatId,
             text: message,

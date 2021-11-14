@@ -1,0 +1,25 @@
+.text {
+    padding: 0 10px;
+    font-family: 'InputMono-Light';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+}
+.window {
+    width: 40%;
+}
+
+@media screen and (max-width: 1024px) {
+    .window {
+        width: 80%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .window {
+        width: 95%;
+    }
+}

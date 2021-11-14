@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* HOME */
@@ -52,11 +53,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .date {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 .counter {
     display: flex;
@@ -81,9 +84,15 @@
     display: flex;
     justify-content: space-between;
 }
-.time img {
-    position: absolute;
+.penContainer {
+    width: 50%;
     right: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+}
+.time img {
+    width: 100%;
 }
 .dateText {
     flex-direction: column;
@@ -144,4 +153,548 @@
     width: 580px;
     box-sizing: border-box;
     margin-bottom: 40px;
+}
+
+/* TESIS */
+
+.tesis {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    overflow-x: hidden;
+}
+.tesisContainer {
+    display: flex;
+    justify-content: center;
+}
+.tesisContainer div {
+    width: 50%;
+}
+.tesisImage img {
+    width: 100%;
+}
+.tesisText {
+    padding-top: 40px;
+    margin-left: 5%;
+}
+.tesisText h2 {
+    font-family: 'InputMono-Light';
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.tesisText ul {
+    list-style: none;
+    padding-left: 0;
+}
+.tesisText ul li {
+    font-family: 'InputMono-Light';
+    font-size: 16px;
+}
+.tesisText ul li::before {
+    content: "¶";
+    color: #940014;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+
+/* SHEDULE */
+
+.shedule {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.sheduleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sheduleContainer h2 {
+    font-family: 'InputMono-Light';
+    font-size: 45px;
+    font-weight: bold;
+    margin: 2.5% auto;
+    margin-bottom: 50px;
+}
+.dayBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.day {
+    width: 50%;
+    display: flex;
+}
+.dayTime {
+    padding: 2.5% 2.5% 1%;
+    font-size: 42px;
+    text-align: center;
+    line-height: 55px;
+    font-family: 'InputMono-Medium';
+    width: 60px;
+    position: relative;
+    height: 220px;
+    background: black;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dayTime p {
+    color: white;
+    transform: rotate(-90deg);
+    font-size: 55px;
+    font-family: 'InputMono-Medium';
+    position: relative;
+    left: 5px;
+}
+.sheduleText {
+    display: flex;
+    flex-direction: column;
+}
+.sheduleText p {
+    color: #940014;
+    font-family: 'InputMono-Light';
+    font-size: 18px;
+    margin: 2.5% 0%;
+}
+.shedulePoints {
+    display: flex;
+    flex-direction: column;
+}
+.shedulePoints span {
+    font-size: 16px;
+    font-family: 'InputMono-Regular';
+    margin: 3px 0;
+}
+
+
+/* BONUS */
+
+.bonus {
+    width: 100%;
+    background-image: url("../Assets/bg2.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding: 50px 0;
+}
+.bonus .inviteText {
+    width: 680px;
+}
+
+/* TRENERS */
+
+.treners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 80px; 
+}
+.treners h2 {
+    font-family: 'InputMono-Light';
+    margin: 2.5% auto;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+.trener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trener h5 {
+    font-family: 'InputMono-Medium';
+    font-size: 22px;
+    margin: 2.5% auto;
+}
+.trener button {
+    background-color: white !important;
+    border: 1px solid #940014 !important;
+    color: #940014 !important;
+    border-radius: 0 !important;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+}
+.trener button:hover {
+    background-color: #940014 !important;
+    color: white !important;
+}
+.trener button span {
+    transform: rotate(90deg);
+}
+.trenerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5%;
+    height: 0;
+    transition-duration: .3s;
+    overflow-y: hidden;
+    width: 70%;
+}
+.activeTrener {
+    height: 320px;
+}
+.trenerInfo p {
+    font-family: 'InputMono-Medium';
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.trenerInfo span {
+    font-family: 'InputMono-Light';
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.trener + .trener {
+    margin-top: 50px;
+}
+
+/* PAYMENT */
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.payment h2 {
+    font-family: 'InputMono-Light';
+    margin: 2.5% auto;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.prices {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+.priceBlock, .priceBorder {
+    width: 80%;
+    height: 250px;
+    border: 1px solid #212529;
+    background-color: transparent;
+    position: relative;
+    margin: 2.5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.priceBlock p {
+    background: black;
+    color: white;
+    width: fit-content;
+    padding: 2.5% 2.5% 1%;
+    font-size: 42px;
+    text-align: center;
+    line-height: 55px;
+    font-family: 'InputMono-Medium';
+}
+.priceBlock span {
+    font-size: 26px;
+    margin-top: 15px;
+    font-family: 'InputMono-Light';
+}
+.priceBorder {
+    position: absolute;
+    transform: translateX(-15px) translateY(-15px);
+}
+.paymentPoints {
+    display: flex;
+    flex-direction: column;
+}
+.paymentBut {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.paymentBut button {
+    width: 30%;
+}
+.payBut {
+    display: none;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+}
+.footer h2 {
+    align-self: flex-end;
+    font-family: 'InputMono-Light';
+    font-size: 45px;
+    color: rgb( 32, 45, 53 );
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.contact img {
+    position: relative;
+    top: 2px;
+}
+.viber {
+    width: 25px;
+}
+.wahtsapp {
+    width: 20px;
+}
+.contact span {
+    margin: 0 7px;
+}
+.contact a {
+    font-family: 'InputMono-Medium';
+    color: #940014;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links img {
+    width: 30px;
+    transition-duration: .3s;
+}
+.links a {
+    margin: 0 15px;
+    transition-duration: .3s;
+}
+.links a:hover img {
+    opacity: .8;
+}
+.links {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .centralCounter {
+        width: 55%;
+    }
+    .tesisText {
+        padding-top: 0;
+    }
+    .activeTrener {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .centralCounter {
+        width: 65%;
+    }
+    .dayBlock {
+        flex-direction: column;
+    }
+    .day {
+        width: 100%;
+    }
+    .dayBlock .day + .day {
+        margin-top: 50px;
+    }
+    .trenerInfo {
+        width: 100%;
+    }
+    .prices {
+        flex-direction: column;
+    }
+    .price {
+        width: 100%;
+    }
+    .price + .price {
+        margin-top: 50px;
+    }
+    .paymentBut {
+        display: none;
+    }
+    .payBut {
+        display: block;
+        margin-top: 30px;
+    }
+    .footer h2 {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .home h1 {
+        font-size: 32px;
+    }
+    .home p {
+        font-size: 24px;
+    }
+    .home h2 {
+        font-size: 36px;
+        margin-top: 25px;
+    }
+    .home ul {
+        padding-left: 10px;
+        margin-top: 25px;
+    }
+    .date {
+        flex-direction: column;
+    }
+    .counter {
+        width: 100%;
+    }
+    .counter h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+    }
+    .counter {
+        margin: 15px 0;
+    }
+    .dateBot {
+        flex-direction: column-reverse;
+    }
+    .dateText {
+        width: 100%;
+    }
+    .penContainer {
+        width: 100%;
+    }
+    .who {
+        flex-direction: column;
+    }
+    .arrow {
+        opacity: 0;
+    }
+    .who .whoSide + .whoSide {
+        margin-top: 50px;
+    }
+    .inviteText {
+        width: 90%;
+    }
+    .tesisContainer {
+        flex-direction: column;
+    }
+    .tesisImage {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .tesisContainer div {
+        width: 100%;
+    }
+    .tesisText h2 {
+        font-size: 38px;
+    }
+    .sheduleContainer h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .dayTime {
+        width: 42px;
+    }
+    .dayTime p {
+        font-size: 46px;
+    }
+    .bonus .inviteText {
+        width: 90%;
+    }
+    .activeTrener {
+        height: 540px;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+    .priceBlock span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .day {
+        flex-direction: column;
+    }
+    .dayTime p {
+        transform: rotate(0deg);
+        left: 0;
+        top: 2px;
+    }
+    .dayTime {
+        height: fit-content;
+        width: 100%;
+        padding: 0;
+    }
+    .trenerInfo span {
+        font-size: 14px;
+    }
+    .activeTrener {
+        height: 495px;
+    }
+    .payment h2 {
+        font-size: 24px;
+    }
+    .priceBlock, .priceBorder {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .home ul li {
+        margin-bottom: 10px;
+    }
+    .counter h3 {
+        font-size: 32px;
+        height: fit-content;
+    }
+    .trener img {
+        width: 80%;
+    }
+    .treners h2 {
+        font-size: 34px;
+    }
+    .activeTrener {
+        height: 590px;
+    }
+    .payment {
+        margin-top: 0;
+    }
+    .footer h2 {
+        font-size: 32px;
+    }
 }

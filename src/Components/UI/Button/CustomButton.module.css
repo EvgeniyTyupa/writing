@@ -16,8 +16,8 @@
     border: 1px solid rgb(148, 0, 20) !important;
 }
 .green {
-    background-color: rgb(39, 148, 0);
+    background-color: rgb(39, 148, 0) !important;
 }
 .green:hover {
-    background-color: rgb(32, 117, 1);
+    background-color: rgb(32, 117, 1) !important;
 }
