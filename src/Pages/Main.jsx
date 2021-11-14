@@ -112,7 +112,7 @@ const Main = (props) => {
             {props.isFetching && <Preloader/>}
             {isOpenRegisterModal && <Register onClose={closeRegister} packetType={packetType} userURL={userURL}/>}
             {isOpenThankyou && <Thankyou onClick={handleThankyou}/>}
-            <Navbar/>
+            <Navbar lang={lang}/>
             <Container>
                 <div className={classes.home}>
                     <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">{t("home.title")}</h1>
@@ -123,7 +123,7 @@ const Main = (props) => {
                         <li>{t("home.points.two")} <strong>{t("home.points.names")}</strong></li>
                         <li>{t("home.points.three")}</li>
                     </ul>
-                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2700" style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+                    <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
                         <CustomButton text={t("actions.register_now")} onClick={scrollToPaymentBlock}/>
                     </div>
                 </div>
