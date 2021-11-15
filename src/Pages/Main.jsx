@@ -96,11 +96,11 @@ const Main = (props) => {
         if(props.isSuccess){
             switch(packetType){
                 case "standart": {
-                    setTimeout(function(){document.location.href = 'https://secure.wayforpay.com/button/b46945bfdc232';}, 1000);
+                    setTimeout(function(){document.location.href = 'https://secure.wayforpay.com/button/b0056fa2382d0';}, 1000);
                     break
                 }
                 case "writer": {
-                    setTimeout(function(){document.location.href = 'https://secure.wayforpay.com/button/bd420664cae76';}, 1000);
+                    setTimeout(function(){document.location.href = 'https://secure.wayforpay.com/button/b826eb270352b';}, 1000);
                     break
                 }
             }
